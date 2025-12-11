@@ -23,3 +23,4 @@ A modern, responsive personal portfolio.
   - **Update:** Edit existing entries directly from the UI.
   - **Delete:** Remove outdated content safely.
 - **Image Management:** Integrated file upload handling with automatic storage references.
+- **EmailJs integration**
