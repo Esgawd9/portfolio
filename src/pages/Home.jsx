@@ -54,6 +54,9 @@ import {
   SiPlatformdotsh,
   SiTailwindcss,
   SiC,
+  SiDocker,
+  SiSvelte,
+  SiFirebase
 } from "react-icons/si";
 
 // ==========================================
@@ -137,56 +140,103 @@ const Home = ({ isDarkMode, openContact }) => {
     },
   ];
 
-  // Skills
   const SKILLS = [
-    {
-      name: "Python",
-      icon: FaPython,
-      color: "bg-blue-800",
-      text: "text-white",
-    },
-    { name: "Java", icon: FaJava, color: "bg-red-500", text: "text-white" },
-    {
-      name: "C++",
-      icon: SiCplusplus,
-      color: "bg-blue-700",
-      text: "text-white",
-    },
-    {
-      name: "C",
-      icon: SiC,
-      color: "bg-indigo-700",
-      text: "text-white",
-    },
-    {
-      name: "JavaScript",
-      icon: SiJavascript,
-      color: "bg-yellow-400",
-      text: "text-black",
-    },
-    { name: "React", icon: FaReact, color: "bg-sky-500", text: "text-white" },
-    { name: "PHP", icon: FaPhp, color: "bg-indigo-500", text: "text-white" },
-    {
-      name: "HTML",
-      icon: FaHtml5,
-      color: "bg-orange-500",
-      text: "text-white",
-    },
-    {
-      name: "CSS",
-      icon: FaCss3Alt,
-      color: "bg-blue-500",
-      text: "text-white",
-    },
-    { name: "SQL", icon: SiMysql, color: "bg-blue-600", text: "text-white" },
-    { name: "Git", icon: FaGitAlt, color: "bg-orange-600", text: "text-white" },
-    {
-      name: "Tailwind",
-      icon: SiTailwindcss,
-      color: "bg-gray-700",
-      text: "text-white",
-    },
-  ];
+  // --- Modern Frontend ---
+  {
+    name: "Svelte 5",
+    icon: SiSvelte,
+    color: "bg-orange-600",
+    text: "text-white",
+  },
+  {
+    name: "React",
+    icon: FaReact,
+    color: "bg-sky-500",
+    text: "text-white",
+  },
+  {
+    name: "JavaScript",
+    icon: SiJavascript,
+    color: "bg-yellow-400",
+    text: "text-black",
+  },
+  {
+    name: "Tailwind",
+    icon: SiTailwindcss,
+    color: "bg-gray-700",
+    text: "text-white",
+  },
+  {
+    name: "HTML",
+    icon: FaHtml5,
+    color: "bg-orange-500",
+    text: "text-white",
+  },
+  {
+    name: "CSS",
+    icon: FaCss3Alt,
+    color: "bg-blue-500",
+    text: "text-white",
+  },
+
+  // --- Backend & Languages ---
+  {
+    name: "PHP 8.x",
+    icon: FaPhp,
+    color: "bg-indigo-500",
+    text: "text-white",
+  },
+  {
+    name: "Python",
+    icon: FaPython,
+    color: "bg-blue-800",
+    text: "text-white",
+  },
+  {
+    name: "Java",
+    icon: FaJava,
+    color: "bg-red-500",
+    text: "text-white",
+  },
+  {
+    name: "C++",
+    icon: SiCplusplus,
+    color: "bg-blue-700",
+    text: "text-white",
+  },
+  {
+    name: "C",
+    icon: SiC,
+    color: "bg-indigo-700",
+    text: "text-white",
+  },
+
+  // --- Database, DevOps & Tools ---
+  {
+    name: "Docker",
+    icon: SiDocker,
+    color: "bg-blue-600",
+    text: "text-white",
+  },
+  {
+    name: "Firebase",
+    icon: SiFirebase,
+    color: "bg-yellow-500",
+    text: "text-white",
+  },
+  {
+    name: "SQL",
+    icon: SiMysql,
+    color: "bg-blue-500",
+    text: "text-white",
+  },
+  {
+    name: "Git",
+    icon: FaGitAlt,
+    color: "bg-orange-600",
+    text: "text-white",
+  },
+];
 
   //  --- SCHEMA.ORG: HOME ---
   const structuredData = {

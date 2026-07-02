@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import { THEME } from "../config/theme";
 
 const SkillCard = ({ skill, isDarkMode }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [isFlipped, setIsFlipped] = useState(true);
 
   // Theme shortcuts
   const cardBg = isDarkMode ? THEME.dark.card : THEME.light.card;
