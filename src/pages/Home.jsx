@@ -76,35 +76,53 @@ const Home = ({ isDarkMode, openContact }) => {
   w-50 md:justify-center md:w-auto gap-2 px-4 py-2 rounded-full border-2`;
 
   const EXPERIENCES = [
-    {
-      title: "Intern - Full-stack Developer",
-      company: "IT NET Solution LTD",
-      period: "2026 Jan - Present",
-    },
-    {
-      title: "Intern - Web Developer",
-      company: "origin/develop Kft.",
-      period: "2025 (3 months)",
-      points: [
-        {
-          label: "Frontend Development",
-          text: "Developed and maintained responsive UI components using Liquid, JavaScript, and Tailwind CSS.",
-        },
-        {
-          label: "Performance Optimization",
-          text: "Optimized Core Web Vitals via Lighthouse audits, SEO fixes, and 301 redirects.",
-        },
-        {
-          label: "UI/UX & Accessibility",
-          text: "Implemented Dark Mode and ensured WCAG-compliant accessibility.",
-        },
-        {
-          label: "Agile Collaboration",
-          text: "Worked in agile workflows using Git/GitHub, PRs, and release management.",
-        },
-      ],
-    },
-  ];
+  {
+    title: "Full-Stack Developer",
+    company: "IT NET Solution LTD",
+    period: "2026 Jan - Present",
+    points: [
+      {
+        label: "Core Architecture & Backend",
+        text: "Architected a visual middleware platform using SvelteKit and Slim PHP, building RESTful API endpoints, secure session authentication, and core server-side logic.",
+      },
+      {
+        label: "Visual Workflow Builder",
+        text: "Developed an advanced drag-and-drop automation canvas using Svelte 5 and Svelte Flow, featuring smart collision-resolution, 'Drop to Connect' mechanics, and automated Dagre layouts.",
+      },
+      {
+        label: "Enterprise Integration",
+        text: "Designed a custom Expression Engine to compile UI rules into OData queries, and built a metadata abstraction layer to normalize data from complex APIs (e.g., SAP Business One, Zoho CRM).",
+      },
+      {
+        label: "Database & State Management",
+        text: "Managed MariaDB migrations with DBmate and engineered an immutable state history engine (Undo/Redo) with strict Directed Acyclic Graph (DAG) validation to prevent execution loops.",
+      },
+    ],
+  },
+  {
+    title: "Intern - Web Developer",
+    company: "origin/develop Kft.",
+    period: "2025 (3 months)",
+    points: [
+      {
+        label: "Frontend Development",
+        text: "Developed and maintained responsive UI components using Liquid, JavaScript, and Tailwind CSS.",
+      },
+      {
+        label: "Performance Optimization",
+        text: "Optimized Core Web Vitals via Lighthouse audits, SEO fixes, and 301 redirects.",
+      },
+      {
+        label: "UI/UX & Accessibility",
+        text: "Implemented Dark Mode and ensured WCAG-compliant accessibility.",
+      },
+      {
+        label: "Agile Collaboration",
+        text: "Worked in agile workflows using Git/GitHub, PRs, and release management.",
+      },
+    ],
+  },
+];
 
   const EDUCATION = [
     {
@@ -201,7 +219,6 @@ const Home = ({ isDarkMode, openContact }) => {
       icon: CircleUserRound,
       tags: ["React", "Tailwind CSS", "Firebase", "Vite"],
       link: "https://www.zsombor-pinter.site",
-      repo: "https://github.com/Esgawd9/Portfolio",
     },
     {
       id: 2,
