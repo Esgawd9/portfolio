@@ -56,7 +56,7 @@ import {
   SiC,
   SiDocker,
   SiSvelte,
-  SiFirebase
+  SiFirebase,
 } from "react-icons/si";
 
 // ==========================================
@@ -79,53 +79,53 @@ const Home = ({ isDarkMode, openContact }) => {
   w-50 md:justify-center md:w-auto gap-2 px-4 py-2 rounded-full border-2`;
 
   const EXPERIENCES = [
-  {
-    title: "Full-Stack Developer",
-    company: "IT NET Solution LTD",
-    period: "2026 Jan - Present",
-    points: [
-      {
-        label: "Core Architecture & Backend",
-        text: "Architected a visual middleware platform using SvelteKit and Slim PHP, building RESTful API endpoints, secure session authentication, and core server-side logic.",
-      },
-      {
-        label: "Visual Workflow Builder",
-        text: "Developed an advanced drag-and-drop automation canvas using Svelte 5 and Svelte Flow, featuring smart collision-resolution, 'Drop to Connect' mechanics, and automated Dagre layouts.",
-      },
-      {
-        label: "Enterprise Integration",
-        text: "Designed a custom Expression Engine to compile UI rules into OData queries, and built a metadata abstraction layer to normalize data from complex APIs (e.g., SAP Business One, Zoho CRM).",
-      },
-      {
-        label: "Database & State Management",
-        text: "Managed MariaDB migrations with DBmate and engineered an immutable state history engine (Undo/Redo) with strict Directed Acyclic Graph (DAG) validation to prevent execution loops.",
-      },
-    ],
-  },
-  {
-    title: "Intern - Web Developer",
-    company: "origin/develop Kft.",
-    period: "2025 (3 months)",
-    points: [
-      {
-        label: "Frontend Development",
-        text: "Developed and maintained responsive UI components using Liquid, JavaScript, and Tailwind CSS.",
-      },
-      {
-        label: "Performance Optimization",
-        text: "Optimized Core Web Vitals via Lighthouse audits, SEO fixes, and 301 redirects.",
-      },
-      {
-        label: "UI/UX & Accessibility",
-        text: "Implemented Dark Mode and ensured WCAG-compliant accessibility.",
-      },
-      {
-        label: "Agile Collaboration",
-        text: "Worked in agile workflows using Git/GitHub, PRs, and release management.",
-      },
-    ],
-  },
-];
+    {
+      title: "Full-Stack Developer",
+      company: "IT NET Solution LTD",
+      period: "2026 Jan - Present",
+      points: [
+        {
+          label: "Core Architecture & Backend",
+          text: "Built the frontend and backend for a visual integration platform using SvelteKit and PHP. Handled API setup, user logins, and main server logic.",
+        },
+        {
+          label: "Visual Workflow Builder",
+          text: "Created a drag-and-drop tool where users can visually build automated workflows. Added features that automatically organize layout elements and make them easy to connect.",
+        },
+        {
+          label: "Enterprise Integration",
+          text: "Wrote code that translates user interface actions into database searches. Built a system to standardize data coming from external services like SAP and Zoho CRM.",
+        },
+        {
+          label: "Database & State Management",
+          text: "Managed the MariaDB database structure and built a reliable 'Undo/Redo' feature that safely prevents the system from getting stuck in infinite loops.",
+        },
+      ],
+    },
+    {
+      title: "Intern - Web Developer",
+      company: "origin/develop Kft.",
+      period: "2025 (3 months)",
+      points: [
+        {
+          label: "Frontend Development",
+          text: "Developed and maintained responsive UI components using Liquid, JavaScript, and Tailwind CSS.",
+        },
+        {
+          label: "Performance Optimization",
+          text: "Optimized Core Web Vitals via Lighthouse audits, SEO fixes, and 301 redirects.",
+        },
+        {
+          label: "UI/UX & Accessibility",
+          text: "Implemented Dark Mode and ensured WCAG-compliant accessibility.",
+        },
+        {
+          label: "Agile Collaboration",
+          text: "Worked in agile workflows using Git/GitHub, PRs, and release management.",
+        },
+      ],
+    },
+  ];
 
   const EDUCATION = [
     {
@@ -141,102 +141,102 @@ const Home = ({ isDarkMode, openContact }) => {
   ];
 
   const SKILLS = [
-  // --- Modern Frontend ---
-  {
-    name: "Svelte 5",
-    icon: SiSvelte,
-    color: "bg-orange-600",
-    text: "text-white",
-  },
-  {
-    name: "React",
-    icon: FaReact,
-    color: "bg-sky-500",
-    text: "text-white",
-  },
-  {
-    name: "JavaScript",
-    icon: SiJavascript,
-    color: "bg-yellow-400",
-    text: "text-black",
-  },
-  {
-    name: "Tailwind",
-    icon: SiTailwindcss,
-    color: "bg-gray-700",
-    text: "text-white",
-  },
-  {
-    name: "HTML",
-    icon: FaHtml5,
-    color: "bg-orange-500",
-    text: "text-white",
-  },
-  {
-    name: "CSS",
-    icon: FaCss3Alt,
-    color: "bg-blue-500",
-    text: "text-white",
-  },
+    // --- Modern Frontend ---
+    {
+      name: "Svelte 5",
+      icon: SiSvelte,
+      color: "bg-orange-600",
+      text: "text-white",
+    },
+    {
+      name: "React",
+      icon: FaReact,
+      color: "bg-sky-500",
+      text: "text-white",
+    },
+    {
+      name: "JavaScript",
+      icon: SiJavascript,
+      color: "bg-yellow-400",
+      text: "text-black",
+    },
+    {
+      name: "Tailwind",
+      icon: SiTailwindcss,
+      color: "bg-gray-700",
+      text: "text-white",
+    },
+    {
+      name: "HTML",
+      icon: FaHtml5,
+      color: "bg-orange-500",
+      text: "text-white",
+    },
+    {
+      name: "CSS",
+      icon: FaCss3Alt,
+      color: "bg-blue-500",
+      text: "text-white",
+    },
 
-  // --- Backend & Languages ---
-  {
-    name: "PHP 8.x",
-    icon: FaPhp,
-    color: "bg-indigo-500",
-    text: "text-white",
-  },
-  {
-    name: "Python",
-    icon: FaPython,
-    color: "bg-blue-800",
-    text: "text-white",
-  },
-  {
-    name: "Java",
-    icon: FaJava,
-    color: "bg-red-500",
-    text: "text-white",
-  },
-  {
-    name: "C++",
-    icon: SiCplusplus,
-    color: "bg-blue-700",
-    text: "text-white",
-  },
-  {
-    name: "C",
-    icon: SiC,
-    color: "bg-indigo-700",
-    text: "text-white",
-  },
+    // --- Backend & Languages ---
+    {
+      name: "PHP 8.x",
+      icon: FaPhp,
+      color: "bg-indigo-500",
+      text: "text-white",
+    },
+    {
+      name: "Python",
+      icon: FaPython,
+      color: "bg-blue-800",
+      text: "text-white",
+    },
+    {
+      name: "Java",
+      icon: FaJava,
+      color: "bg-red-500",
+      text: "text-white",
+    },
+    {
+      name: "C++",
+      icon: SiCplusplus,
+      color: "bg-blue-700",
+      text: "text-white",
+    },
+    {
+      name: "C",
+      icon: SiC,
+      color: "bg-indigo-700",
+      text: "text-white",
+    },
 
-  // --- Database, DevOps & Tools ---
-  {
-    name: "Docker",
-    icon: SiDocker,
-    color: "bg-blue-600",
-    text: "text-white",
-  },
-  {
-    name: "Firebase",
-    icon: SiFirebase,
-    color: "bg-yellow-500",
-    text: "text-white",
-  },
-  {
-    name: "SQL",
-    icon: SiMysql,
-    color: "bg-blue-500",
-    text: "text-white",
-  },
-  {
-    name: "Git",
-    icon: FaGitAlt,
-    color: "bg-orange-600",
-    text: "text-white",
-  },
-];
+    // --- Database, DevOps & Tools ---
+    {
+      name: "Docker",
+      icon: SiDocker,
+      color: "bg-blue-600",
+      text: "text-white",
+    },
+    {
+      name: "Firebase",
+      icon: SiFirebase,
+      color: "bg-yellow-500",
+      text: "text-white",
+    },
+    {
+      name: "SQL",
+      icon: SiMysql,
+      color: "bg-blue-500",
+      text: "text-white",
+    },
+    {
+      name: "Git",
+      icon: FaGitAlt,
+      color: "bg-orange-600",
+      text: "text-white",
+    },
+  ];
 
   //  --- SCHEMA.ORG: HOME ---
   const structuredData = {
@@ -343,7 +343,7 @@ const Home = ({ isDarkMode, openContact }) => {
             >
               <Linkedin size={16} className={THEME.accent.text} />
               LinkedIn
-              <ExternalLink size={10} className="ml-auto"/>
+              <ExternalLink size={10} className="ml-auto" />
             </a>
 
             {/* Email */}
@@ -377,8 +377,8 @@ const Home = ({ isDarkMode, openContact }) => {
             </Link>
 
             {/* Resume */}
-            <a
-              href="/resume.pdf"
+            {/* <a
+              href="/resume_blank.pdf"
               target="_blank"
               className={`
       
@@ -389,8 +389,8 @@ const Home = ({ isDarkMode, openContact }) => {
             >
               <FileText size={18} className={THEME.accent.text} />
               CV
-              <ExternalLink size={10} className="ml-auto"/>
-            </a>
+              <ExternalLink size={10} className="ml-auto" />
+            </a> */}
           </div>
 
           <div className="flex flex-wrap justify-center gap-4">
@@ -442,7 +442,7 @@ const Home = ({ isDarkMode, openContact }) => {
         </section>
 
         {/* FEATURED PROJECTS */}
-        <section id="projects">
+        {/* <section id="projects">
           <div className="flex items-center gap-3 mb-8">
             <Code className={`w-6 h-6 ${THEME.accent.text}`} />
             <h2 className="text-3xl font-bold">Featured Projects</h2>
@@ -457,7 +457,7 @@ const Home = ({ isDarkMode, openContact }) => {
               />
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* EXPERIENCE & EDUCATION */}
         <div className="grid md:grid-cols-2 gap-12">
